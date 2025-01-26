@@ -1,0 +1,29 @@
+yo oopify(prefix) -> prefix + "oop"
+
+yo join(elements, separator)
+    cash result = ""
+    cash len = len(elements)
+
+    cycle i = 0 to len then
+        cash result = result + elements/i
+        bet i != len - 1 then cash result = result + separator
+    destroy
+
+    emit result
+destroy
+
+taiz map(elements, func)
+    cash new_elements = []
+
+    cycle i = 0 to len(elements) then
+        append(new_elements, func(elements/i))
+    destroy
+
+    emit new_elements
+destroy
+
+print("Greetings universe!")
+
+cycle i = 0 to 5 then
+    print(join(map(["l", "sp"], oopify), ", "))
+destroy
