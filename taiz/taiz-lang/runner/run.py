@@ -1,9 +1,9 @@
-import basic
+import taiz
 
 while True:
 	text = input('taiz > ')
 	if text.strip() == "": continue
-	result, error = basic.run('<terror>', text)
+	result, error = taiz.run('<terror>', text)
 
 	if error:
 		print(error.as_string())
