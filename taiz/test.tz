@@ -1,0 +1,4 @@
+cash x = 0
+until x == 5 boom
+emit x
+cash x = x + 1
